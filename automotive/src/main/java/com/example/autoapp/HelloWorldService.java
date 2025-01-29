@@ -14,8 +14,6 @@ public class HelloWorldService extends CarAppService {
         return HostValidator.ALLOW_ALL_HOSTS_VALIDATOR;
     }
 
-    @Override
-    @NonNull
     public Session onCreateSession() {
         return new Session() {
             @NonNull

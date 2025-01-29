@@ -12,12 +12,10 @@ public class HelloWorldScreen extends Screen {
     public HelloWorldScreen(CarContext carContext) {
         super(carContext);
     }
-
     @NonNull
     @Override
     public Template onGetTemplate() {
-        Row row = new Row.Builder().setTitle("Hello AA World!")
-                .addText("Example text").build();
+        Row row = new Row.Builder().setTitle("Hello AA World!").addText("Example text").build();
         return new PaneTemplate.Builder(new Pane.Builder().addRow(row).build()).setTitle("AA Hello!!!").build();
     }
 }
