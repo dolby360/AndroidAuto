@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.autoapp">
-
+    <uses-permission android:name="android.car.permission.CAR_PREFERRED" />
     <uses-feature
         android:name="android.hardware.type.automotive"
         android:required="true" />
@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AutoApp">
+
         <meta-data
             android:name="com.google.android.gms.car.application"
             android:resource="@xml/automotive_app_desc"/>
@@ -21,6 +22,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="androidx.car.app.CarAppService" />
+                <category android:name="androidx.car.app.category.AA_APP" />
             </intent-filter>
         </service>
     </application>
