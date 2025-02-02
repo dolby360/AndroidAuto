@@ -1,2 +1,4 @@
 include ':automotive'
 rootProject.name = "AutoApp"
+include ':automotive:mobile'
+include ':mobile'

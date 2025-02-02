@@ -12,6 +12,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/automotive" />
+            <option value="$PROJECT_DIR$/automotive/mobile" />
+            <option value="$PROJECT_DIR$/mobile" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
